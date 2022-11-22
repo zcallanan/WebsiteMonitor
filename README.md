@@ -1,12 +1,12 @@
 ## Setup
 #### Before you run the script, I use python3, pip3, and a few packages. Run in the terminal if needed: 
-python3 -m ensurepip --default-pip
-pip3 install pyyaml
-pip3 install requests
+- `python3 -m ensurepip --default-pip`
+- `pip3 install pyyaml`
+- `pip3 install requests`
 
 ## To Run
 #### Enter the following in the terminal:
-python3 website_monitor.py
+`python3 website_monitor.py`
 
 ## Config
 #### This script reads the following from a config yaml file:
