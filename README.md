@@ -20,7 +20,7 @@ I considered breaking up the script, especially the get request as an OOP class,
 ## App
 1. Starts with an initial prompt, where user can input a custom period of time between a check of each url in the list, or hit ENTER to use the config default
 2. Uses the requests library to make http requests which provides the elapsed time to receive the response
-3. Writes the result of the http requests to a log file. The data written is the date & time, url, status, and time in seconds for the response
+3. Writes the result of the http requests to a log file. The data written is the date & time, url, status, and time in seconds for the response: `Tue Nov 22 14:14:40 2022; https://example.com; 200 - OK; 0.452566`
 4. Use CTRL C to quit the app. Unfortunately I did not have time to add an elegant quit in v1, but with more time it's definitely possible
 
 ## Status

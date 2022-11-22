@@ -13,7 +13,6 @@ config_period = config_data['data']['period']
 config_log_file = config_data['data']['log_file']
 config_urls = config_data['data']['urls']
 input_val = ''
-input_quit = ''
 
 def handle_standard_output(period):
     # Use config period
