@@ -1,26 +1,26 @@
-Setup - before you run the script, I use python3, pip3, and a few packages. Run in the terminal if needed: 
+## Setup - before you run the script, I use python3, pip3, and a few packages. Run in the terminal if needed: 
 python3 -m ensurepip --default-pip
 pip3 install pyyaml
 pip3 install requests
 
-To Run - enter the following in the terminal:
+## To Run - enter the following in the terminal:
 python3 website_monitor.py
 
-Config - This script reads the following from a config yaml file:
+## Config - This script reads the following from a config yaml file:
 1. Period of time in seconds between http get requests
 2. Log file name
 3. List of urls to check. The list format starts with a dash then the url
 
-Structure
+## Structure
 I considered breaking up the script, especially the get request as an OOP class, but in the interest of time I left it as a single script.
 
-App
+## App
 1. Starts with an initial prompt, where user can input a custom period of time between a check of each url in the list, or hit ENTER to use the config default
 2. Uses the requests library to make http requests which provides the elapsed time to receive the response
 3. Writes the result of the http requests to a log file. The data written is the date & time, url, status, and time in seconds for the response
 4. Use CTRL C to quit the app. Unfortunately I did not have time to add an elegant quit in v1, but with more time it's definitely possible
 
-Status
+## Status
 The value logged is the http response with its name. This is a rather limited representation of a website's status and not fully descriptive.
 There are several scenarios that may present themselves:
 1. Errors in the config list/nonexistant urls - added exception handling to abort the async loop running
