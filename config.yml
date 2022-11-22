@@ -1,0 +1,10 @@
+---
+data:
+    period: 5
+    log_file: monitor.log
+    urls: 
+        - https://example.com
+        - https://www.google.com
+        - https://www.linuxfoundation.org
+        - https://www.cnn.com
+...
